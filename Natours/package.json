@@ -3,6 +3,7 @@
     "node-sass": "^4.7.2"
   },
   "scripts": {
-    "watch-css": "node-sass -w scss/style.scss -o css/"
+    "compile-scss": "node-sass scss/style.scss css/style.css",
+    "watch-css": "yarn compile-scss && node-sass -w scss/style.scss -o css/"
   }
 }
